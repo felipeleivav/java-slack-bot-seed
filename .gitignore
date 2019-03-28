@@ -1,0 +1,5 @@
+.idea
+dist
+logs
+target
+java-slack-bot-seed.iml
