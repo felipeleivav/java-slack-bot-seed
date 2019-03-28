@@ -1,7 +1,6 @@
 package com.slack.app.bot;
 
 import com.slack.app.annotations.*;
-import com.slack.app.main.App;
 import com.ullink.slack.simpleslackapi.SlackChannel;
 import com.ullink.slack.simpleslackapi.SlackUser;
 import org.apache.log4j.Logger;
@@ -12,7 +11,7 @@ import java.util.Date;
 @TokenProperty("slack.token.testbot")
 public class TestBot {
 
-    private static Logger logger = Logger.getLogger(App.class);
+    private static Logger logger = Logger.getLogger(TestBot.class);
 
     @Any
     public String test(@ChannelParam SlackChannel channel, @UserParam SlackUser user, @MessageParam String message,  @IsPMParam boolean isPM, @IsMentionParam boolean isMention) {
